@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'fluentd'
+  spec.add_dependency 'fluentd', [">= 0.10.58", "< 0.14"]
   # XXX: https://github.com/winebarrel/fluent-plugin-dd/issues/2
   spec.add_dependency 'dogapi', '>= 1.15.0'
   spec.add_development_dependency 'bundler'
